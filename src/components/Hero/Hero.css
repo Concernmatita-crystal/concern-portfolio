@@ -1,0 +1,23 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.hero img{
+    margin-top: 80px;
+}
+ 
+.hero h1{
+    text-align: center;
+    width: 50%;
+    font-size: 60px;
+    font-weight: 600;
+}
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
