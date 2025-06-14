@@ -1,0 +1,71 @@
+/* Certifications.css */
+.certifications-section {
+  padding: 60px 20px;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px #00f0ff;
+}
+
+.certifications-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-10px);
+  
+}
+.view-btn{
+  color: #ff00ff;
+  text-decoration: dotted;
+  
+
+}
+
+.cert-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cert-content {
+  padding: 15px;
+}
+
+.cert-title {
+  font-size: 1.10rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  
+  
+  }
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+  opacity: 0.6;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}

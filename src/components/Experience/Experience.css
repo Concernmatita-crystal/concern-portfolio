@@ -1,0 +1,170 @@
+.experience-section {
+  background-color: #000000;
+  margin: 80px 170px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px #00f0ff;
+  text-align: center;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
+
+
+/* Vertical line down the center */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, #DF8908, #B415ff);
+  z-index: 1;
+}
+
+/* Timeline item */
+.timeline-item {
+  width: 50%;
+  padding: 20px 30px;
+  position: relative;
+}
+
+/* Dot indicator */
+.timeline-dot {
+  position: absolute;
+  top: 20px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 4px solid #B415ff;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+
+.timeline-item.left {
+  left: -10%;
+  text-align: left;
+}
+.timeline-item.left:hover{
+  transform: translateY(-8px);
+
+}
+.timeline-item.left .timeline-dot {
+  right: -2rem;
+}
+.timeline-item.right {
+  left: 60%;
+  text-align: left;
+}
+
+.timeline-item.right:hover{
+  transform: translateY(-8px);
+
+}
+.timeline-item.right .timeline-dot {
+  left: -5.6rem;
+}
+
+/* Content box */
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  z-index: 1;
+}
+
+.timeline-content h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #fff;
+  
+}
+
+.timeline-content-title {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.timeline-content span {
+  font-size: 14px;
+  color: #bdbcbc;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 15px;
+  color: #bdbcbc;
+  line-height: 1.5;
+}
+
+.Key-courses-list {
+  line-height: 1.6;
+  list-style-position: inside;
+  color: #bdbcbc;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.Key-courses-list li {
+  margin-bottom: 5px;
+}
+
+/* Fancy divider */
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  margin-top: -1rem;
+  margin-bottom: 4rem;
+  opacity: 0.6;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .experience-section {
+    margin: 50px 20px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding: 30px 20px 30px 60px;
+    left: 0 !important;
+  }
+
+  .timeline-item .timeline-dot {
+    left: 20px !important;
+    right: auto;
+  }
+
+  .timeline-content {
+    margin-left: 30px;
+  }
+}

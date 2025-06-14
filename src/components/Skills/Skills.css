@@ -1,0 +1,88 @@
+/* Skills.css */
+.skills-section {
+  background-color: #121212;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px #00f0ff;
+  
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.skillsub{
+
+  font-size: 1.5rem;
+   margin-bottom: 30px;
+  
+  
+}
+.what-i-do .service{
+  width: 40%;
+  align-items: center;
+  padding: 2%;
+  background-color: #0e0e0e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px);
+  
+}
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Technical Skills Bar */
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.skill-track {
+  height: 10px;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.skill-fill {
+  height: 100%;
+  background-color: #9f7aea;
+  border-radius: 5px;
+}
+
+/* What I Do Cards */
+.what-i-do .service {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.what-i-do .service h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #9f7aea;
+}

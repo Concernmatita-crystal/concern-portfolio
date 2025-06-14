@@ -1,0 +1,126 @@
+.education-section {
+  background-color: #000000;
+  padding: 80px 100px;
+  color: white;
+  
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px #00f0ff;
+}
+
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  margin: 0 auto 30px auto;
+  opacity: 0.6;
+  width: 10%;
+}
+
+/* Tab buttons */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tab-button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+  background: #222;
+  border-color: #ff00ff;
+}
+
+.tab-button.active {
+  background: linear-gradient(to right, #00f0ff, #b415ff);
+  color: black;
+  font-weight: bold;
+  box-shadow: 0 0 15px #b415ff;
+}
+
+/* Card */
+.education-card-container {
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.education-card {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border-radius: 16px;
+  padding: 30px 25px;
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 500px;
+  width: 100%;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.education-card:hover {
+  transform: translateY(-10px);
+}
+
+.education-card-title {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.education-card-subtitle {
+  font-size: 0.9rem;
+  color: #bdbcbc;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.education-card-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #bdbcbc;
+}
+
+.education-card-heading {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.education-card-list {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #bdbcbc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .tab-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .education-card {
+    padding: 20px;
+  }
+}

@@ -1,27 +1,24 @@
 import React from 'react'
 import './Navigationbar.css'
-import logo from '../../assets/logo.PNG'
+/*import logo from '../../assets/logo.PNG'
+<img src={logo} alt="logo" className='logo' />*/
 
 const Navigationbar = () => {
   return (
     <div className='navbar'>
-        <img src={logo} alt="logo" className='logo' />
+        
         <ul className="nav-menu">
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Skills</li>
-            <li>Certifications</li>
-            <li>Contact</li>
+            <li><a href="#Home"className="active">Home</a></li>
+            <li><a href="#About">About </a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
 
-       
-
-
-       
-        <div className="nav-connect">
-            Connect With Me
-        </div>
-
+      
     </div>
   )
 }

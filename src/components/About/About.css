@@ -1,0 +1,95 @@
+.about-main{
+background-color:#121212;
+border: 1px solid #0c0909;
+
+}
+.about{
+    /*display: flex;*/
+    flex-direction: column; 
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+
+}
+.about-title{
+ font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px #00f0ff;
+  text-align: center;
+
+}
+
+.section-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, #00ffff, #ff00ff);
+  margin-top: 10px;
+  margin-bottom: 4rem;
+  opacity: 0.6;
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-left img{
+    width: 300px; 
+    height: 400px; 
+    object-fit: cover; 
+
+  }
+  .about-sections{
+    display: flex;
+    gap: 80px;
+
+  }
+  .about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+  }
+  .about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    color: #bdbcbc;
+    
+
+  } 
+  
+  .about-achievements{
+   display:flex;
+    gap: 20px;
+  }
+  .achievement{
+    gap: 10px;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .achievement h3{
+    text-align: center;
+    font-size : 40px;
+    font-weight: 700px;
+    text-shadow: 0 0 15px #b415ff;
+    color: linear-gradient(to right, #00f0ff, #b415ff);
+   
+    
+
+  }
+  .achievement p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #bdbcbc;
+    text-align: center;
+  }
+  .about-skill:hover{
+    transform: scale(1.12);
+    transition: 0.3s;
+  }
+  .achievement:hover{
+    transform: scale(1.12);
+    transition: 0.5s;
+
+  }
+

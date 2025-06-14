@@ -1,31 +1,42 @@
 .navbar{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+    
     height: 80px;
-    padding: 0 170px;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size:20px;
-}
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
+    padding: 0 40px;
+    background-color: #111827;
 
+
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size:15px;
+    align-items: center;
+    margin-left: auto;
+}
+.nav-menu a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu li.active {
+  
+  color: #a855f7;
+  font-weight: 600;
+  text-shadow: 0 0 15px #fff;
+}
+.nav-menu a:hover{
+  color: #a855f7; /* purple highlight */
+  transition: 0.3s;
+  text-shadow: 0 0 15px #fff;
 
 }
 .logo{
-    width: 20%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
 }
 .nav-connect:hover{
